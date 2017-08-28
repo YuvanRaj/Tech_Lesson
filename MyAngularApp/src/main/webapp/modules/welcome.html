@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html ng-app="MyFirstApp" ng-controller="myFirstAppController as invoice">
+
+<head>
+    <style>
+    .gridStyle {
+        border: 1px solid rgb(212, 212, 212);
+        width: 820px;
+        height: 400px
+    }
+    </style>
+    <link rel="stylesheet" type="text/css" href="/modules/ng-grid.css" />
+    <link rel="stylesheet" type="text/css" href="/modules/style.css" />
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+ --><link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-resource.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    
+    <meta charset="ISO-8859-1">
+    <title>First Angular Page</title>
+</head>
+
+<body bgcolor="#FADBD8">
+    <script src="/modules/app.js"></script>
+    <script src="/modules/ng-grid.js"></script>
+    <!-- Currency -->
+    <script src="/modules/currency/controllers/CurrencyController.js"></script>
+    <script src="/modules/currency/services/CurrencyServices.js"></script>
+    <div>
+        <table>
+            <div>
+                <tr>
+	                <td width="25%">
+	                    <span><b><p>From:</p></b></span>
+	                    <input type="text" ng-model="req.origin" ng-change="filterName();" placeholder="Enter Your Pickup Location Here">
+	                </td>
+	                <td width="25%">
+	                    <span><b><p>To:</p></b></span>
+	                    <input type="text" ng-model="req.destination" ng-change="filterName();" placeholder="Enter Your Drop off Location Here">
+	                </td>
+                </tr>               
+            </div>
+        </table>
+    </div>
+    <br>
+    <div style="text-align: center;">
+        <button ng-click="searchbyod()">Search</button>
+    </div>
+    <br>
+    <div ng-grid="gridOptions" style="height:400px"></div>
+   <!--  <md-button class="md-primary">Click me</md-button>
+    <div ng-controller="GreetingController">
+  		{{ greeting }}
+  		<input  ng-model="message" >
+  		<button ng-click="callNotify(message)">INDIA</button>
+  		<p>(you have to click 3 times to see an alert)</p>
+	</div>
+	<div class="row collapse">
+		<p>Testing Row collapse</p>
+	<div>
+	
+	<div class="panel panel-primary">
+      <div class="panel-heading">Panel with panel-primary class</div>
+      <div class="panel-body">Panel Content</div>
+    </div>
+	
+	<div>
+		<select ng-model="selectedName" ng-options="x for x in names">
+	    </select>
+	</div>
+	
+	<div>
+		<select>
+			<option ng-repeat="x in names">{{x}}</option>
+		</select>
+	</div>
+	
+    <div class="left">
+     <table>
+                <tr>
+	                <td width="25%" align="left">
+					    <span><b><p> A Co efficient:</p></b></span>
+					    <p class="text-editor"></p>
+					    <input type="text" min="0" ng-model="req.root1" required>
+					</td>
+                </tr>                
+                 <tr>
+                   <br>
+	                <td width="25%" align="left">
+					    <span><b><p>B Co efficient:</p></b>
+					    	<input type="text" min="0" ng-model="req.root2" required>
+					</td>
+                </tr>
+                 <tr>
+                 	<br>
+	                <td width="25%" align="left">
+					    <span><b><p>C Co efficient:</p></b></span>
+					    <input type="text" min="0" ng-model="req.root3" required>
+					</td>
+                </tr>
+                  <button class="button" style="position: absolute; left: 50%; right: 50%; bottom: 50%;" ng-click="findroot()">Solution</button>                 
+                 <tr>
+                   <td>
+                        </br></br>
+                  		<span><b>X1</b></span> : {{userInformationList.x1}} 
+                   <td>
+                 </tr>
+                  <tr>
+                   <td>
+                        </br></br>
+                  		<span><b>X2</b></span> : {{userInformationList.x2}}
+                   <td>
+                 </tr>
+     </table>
+     </div> 
+     
+     <a href="#" class="button" ng-click="addRow()">Add Row</a>
+		List of expense : <input ng-model="firstName" required>
+		Amount : <input ng-model="lastName" required>
+		
+		<table>
+			<tr ng-repeat="rowContent in rows">
+			  <td width="100%">{{rowContent.firstName}}</td>
+			  <td width="100%">{{rowContent.lastName}}</td>
+			</tr>
+		</table> -->
+     
+</body>
+
+</html>
