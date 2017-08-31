@@ -55,7 +55,7 @@ angular.module('finance3', [])
     });
   };
 
-  refresh();
+ // refresh();
 
   return {
     currencies: currencies,
