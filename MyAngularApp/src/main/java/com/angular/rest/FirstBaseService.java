@@ -23,6 +23,7 @@ public class FirstBaseService {
 		List<UserInformation> userInformationList = new ArrayList<UserInformation>(10);
 		int i=0;
 		while(i<10){
+			// Each time new UserInformation object will get created
 			userInfoObject = new UserInformation();
 			userInfoObject.setName("Yuvaraj"+i);
 			userInfoObject.setOrigin("Salem"+i);
