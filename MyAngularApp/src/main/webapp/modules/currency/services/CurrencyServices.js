@@ -16,19 +16,6 @@ angular.module('finance2', [])
   };
 });
 
-angular.module('myServiceModule', [])
-.factory('notify',['$window', function(win) {
-	   var msgs = [];
-	   return function(msg) {
-	     msgs.push(msg);
-	     if (msgs.length === 3) {
-	       win.alert(msgs.join('\n'));
-	       msgs = [];
-	     }
-	   };
-}]);
-
-
 angular.module('finance3', [])
 .factory('currencyConverter', ['$http', function($http) {
   var YAHOO_FINANCE_URL_PATTERN =
@@ -55,7 +42,7 @@ angular.module('finance3', [])
     });
   };
 
- // refresh();
+  refresh();
 
   return {
     currencies: currencies,

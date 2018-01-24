@@ -4,28 +4,3 @@
     width: 820px; 
     height: 400px
 }
-
-.button{
-    position:absolute;
-    bottom: 5%;
-    right:20%;
-}
-
-.centered {
-    margin: 0 auto;
-    text-align: left;
-    width: 800px;
-}
-
-.button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 13.3333px Arial;
-    margin: 4px 2px;
-    cursor: pointer;
-}
